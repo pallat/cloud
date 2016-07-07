@@ -228,6 +228,10 @@ function receivedMessage(event) {
                 sendReceiptMessage(senderID);
                 break;
 
+            case '555':
+                lol(senderID);
+                break;
+
             default:
                 sendTextMessage(senderID, messageText);
         }
@@ -236,6 +240,9 @@ function receivedMessage(event) {
     }
 }
 
+function lol(senderID) {
+    sendTextMessage(senderID, "ตลกเหรอ?");
+}
 
 /*
  * Delivery Confirmation Event
